@@ -1,0 +1,58 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.conteudo-topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(68, 216, 216);
+    height: 80px;
+}
+
+.links-topo a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;    
+}
+
+.links-topo a:hover{
+    color:teal;   
+}
+
+.container-fundo{
+    position: relative;
+    background-image: url("../assets/recepcao.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 680px;
+}
+
+.container-titulo {
+    max-width: 1024px;  
+    height: 100%;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+}
+
+.posicao-titulo{
+    height: 200px;
+    width: 400px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #0000;
+    background-color: black;
+
+}
