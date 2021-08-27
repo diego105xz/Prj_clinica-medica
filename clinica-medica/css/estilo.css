@@ -1,18 +1,29 @@
 * {
-    margin: 0 auto;
+    
     box-sizing: border-box;
 }
 
 body{
+    margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
+    
+
+}
+
+header{
+    background-color:rgb(61, 160, 160);
 }
 
 .conteudo-topo{
+    max-width: 1024px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color:rgb(68, 216, 216);
+    background-color:rgb(61, 160, 160);
     height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .links-topo a{
@@ -36,23 +47,106 @@ body{
     height: 680px;
 }
 
-.container-titulo {
+.posicao-titulo {
     max-width: 1024px;  
+    margin: 0 auto;
     height: 100%;
-    border: 2px solid #000;
     display: flex;
     align-items: center;
 }
 
-.posicao-titulo{
+.posicao-titulo h1{
     height: 200px;
     width: 400px;
     color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid #0000;
-    background-color: black;
+    text-transform: uppercase;
+    font-size: 20px;;
+}
 
+.sobre-a-clinica{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-descricao{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.sobre-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#especialidades{
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-direction: column; 
+}
+
+#especialidades h3, #especialidades p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.especialistas-img img{
+    width: 300px;
+    height: 230px;
+}
+
+.especialistas-img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloco-img{
+    border: 1px solid rgb(180, 175, 175);
+    box-shadow: 2px 2px rgba(172, 164, 164, 0.452);
+    text-align: center;
+}
+
+.horarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px  rgba(116, 112, 112, 0.164);
+    width: 110px;
+    height: 40px;
+    background-color:rgb(61, 160, 160);   
+}
+
+.horarios a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#contato{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer{
+    background-color:rgb(61, 160, 160);
+    margin: 0 auto;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
 }
