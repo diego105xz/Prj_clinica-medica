@@ -1,0 +1,124 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+
+}
+
+header{
+    background-color:rgb(61, 160, 160);
+}
+
+.conteudo-topo{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(61, 160, 160);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-topo a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;    
+}
+
+.links-topo a:hover{
+    color:teal;   
+}
+/*Fim do Header*/
+/*Começo Main*/
+.container-especialidades{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.container-especialidades a{
+    text-decoration: none;
+    border-bottom: 2px solid rgb(0, 238, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(95, 95, 95);
+    font-weight: bold;
+}
+.container-especialidades a:hover{
+    color:teal;   
+}
+.container-especialidades{
+    color: rgb(95, 95, 95);
+}
+
+.especialidade-sub-titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.box-tabela{
+    display: flex;
+    height: 240px;
+    margin: 0 auto;
+    max-width: 1024px;
+    
+}
+div{
+    padding: 20px;
+}
+
+.especialidade-sub-titulo h2, .especialidade-sub-titulo p{
+    color: rgb(95, 95, 95);
+}
+.box-tabela img{
+    width: 30%;
+    height: 100%;   
+}
+
+.box-tabela table{
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+}
+
+.box-tabela thead tr {
+    background-color: #00cad1;
+    color: whitesmoke
+  
+}
+
+.box-tabela tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+  }
+
+.box-tabela td{
+    color: rgb(95, 95, 95);
+} 
+/*Fim do Main*/
+/*Começo Rodapé*/
+footer{
+    background-color:rgb(61, 160, 160);
+    margin: 0 auto;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+}
+/*Fim do Rodapé*/
