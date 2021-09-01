@@ -11,33 +11,55 @@ body{
 }
 
 header{
-    background-color:rgb(61, 160, 160);
+    background-color: #00cad1;
 }
 
 .conteudo-topo{
     max-width: 1024px;
     margin: 0 auto;
+}
+.topo {
+    background-color: #00cad1;
+    width: 100%;
+  }
+.topo .conteudo-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.topo-titulo {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(61, 160, 160);
-    height: 80px;
+  }
+.topo-titulo a {
     display: flex;
-    justify-content: space-between;
 }
-
-.links-topo a{
+.topo-logo{
+    height: 60px;
+} 
+.topo-links{
+    display: flex;
+}
+  
+.topo-links a {
+    padding: 10px;
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 8px;    
+    color: #fff;
+    font-weight: 600;
 }
-
-.links-topo a:hover{
-    color:teal;   
+  
+.topo-links a:hover {
+    color: #004b4c;
 }
-
+/*Header*/
 .container-fundo{
     position: relative;
     background-image: url("../assets/recepcao.png");
@@ -70,6 +92,7 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: rgb(95, 95, 95);
 }
 
 
@@ -83,6 +106,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(95, 95, 95);
 }
 
 
@@ -92,6 +116,7 @@ header{
     max-width: 1024px;
     margin: 0 auto;
     flex-direction: column; 
+    color: rgb(95, 95, 95);
 }
 
 #especialidades h3, #especialidades p {
@@ -125,7 +150,7 @@ header{
     box-shadow: 2px 2px  rgba(116, 112, 112, 0.164);
     width: 110px;
     height: 40px;
-    background-color:rgb(61, 160, 160);   
+    background-color: #00cad1;  
 }
 
 .horarios a{
@@ -139,10 +164,11 @@ header{
     max-width: 1024px;
     margin: 0 auto;
     text-align: center;
+    color: rgb(95, 95, 95);
 }
 
 footer{
-    background-color:rgb(61, 160, 160);
+    background-color: #00cad1;
     margin: 0 auto;
 }
 
@@ -156,14 +182,11 @@ footer{
 
 /*Media Query  até 425px*/
 @media only screen and (max-width: 425px) {
-    .links-topo a{
-        font-size: 12px;
-    }
-    .conteudo-topo img{
-        width: 100px;
+    .conteudo-topo{
+        flex-direction: column;
     }
     .container-fundo{
-        height: 60vh;
+        height: 40vh;
     }
     .sobre-descricao img{
         display:none;
@@ -176,15 +199,9 @@ footer{
 
 /*Media Query  até 768px*/
 @media only screen and (max-width: 768px) {
-    .links-topo a{
-        font-size: 15px;
-    }
 
-    .conteudo-topo img{
-        width: 150px;
-    }
     .container-fundo{
-        height: 70vh;
+        height: 50vh;
     }
     .sobre-descricao img{
         display:none;
